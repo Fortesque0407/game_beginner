@@ -1,0 +1,31 @@
+from random import randint
+
+t = ["Samurai", "Dragon", "Gun"]
+computer = t[randint(0,2)]
+
+player = False
+
+while player == False
+  player = input("Samurai, Dragon, Gun?")
+    if player == computer:
+        print("Tie! Go again")
+    elif player == "Samurai":
+        if computer == "Gun":
+            print("You lose!", computer, "shoots", player)
+        else:
+            print("You win!", player, "cuts", computer)
+    elif player == "Dragon":
+        if computer == "Samurai":
+            print("You lose!", computer, "cuts", player)
+        else:
+            print("You win!", player, "smashes", computer)
+    elif player == "Gun":
+        if computer == "Dragon":
+            print("You lose...", computer, "smashes", player)
+        else:
+            print("You win!", player, "shoots", computer)
+    else:
+        print("That's not a valid play. Check your spelling!")
+    
+    player = False
+    computer = t[randint(0,2)]
